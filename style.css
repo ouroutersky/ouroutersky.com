@@ -4,6 +4,11 @@ body {
 	margin: 0;
 	padding: 0;
 }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+  
 h1, h2, h3 {
 	margin: 0;
 }
@@ -19,14 +24,28 @@ a {
 img {
 	max-width: 100%;
 	height: auto;
+        display: block;
+        margin: 0 auto;
+      
 }
 
 /* Header styles */
 header {
-	background-color: #fa72d3;
+	background-color: #f785d7;
 	color: #fdfafb;
 	padding: 20px;
 }
+header {
+    background-color: #f785d7;
+    color: #fdfafb;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; 
+  }
+  
 header h1 {
 	margin: 0;
 	font-size: 36px;
@@ -46,13 +65,19 @@ header nav a {
 	transition: background-color 0.3s ease;
 }
 header nav a:hover {
-	background-color: #9b78ed;
+	background-color: #fccef0;
 }
 
 /* Section styles */
 section {
         padding: 50px;
 }
+section {
+    padding: 50px;
+    margin-top: 100px; /* or adjust as needed */
+}
+
+
 section h2 {
 	font-size: 28px;
 	margin-bottom: 20px;
@@ -63,7 +88,9 @@ section p {
 	line-height: 1.5;
 	margin-bottom: 30px;
     text-align: center;
-}
+
+}  
+    
 
 /* Footer styles */
 footer {
